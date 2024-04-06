@@ -1,0 +1,9 @@
+services:
+  simple:
+    name: Simple Web Service
+    checker:
+      basedir: ./checkers/simple
+      script: ./checker.py
+      setup: pip install --break-system-packages requests
+    vuln:
+      basedir: ./services/simple
